@@ -1,0 +1,12 @@
+{application, erless,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { erless_app, []}},
+  {env, []}
+ ]}.

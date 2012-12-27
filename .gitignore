@@ -1,0 +1,11 @@
+c_src/*.o
+priv/*.so
+ebin/
+logs/
+test/*.beam
+.eunit/
+deps/
+*.beam
+
+erl_crash.dump
+*.plt

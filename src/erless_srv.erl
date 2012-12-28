@@ -53,7 +53,7 @@ compile(File) ->
 init([]) ->
   Vm = ev8:new_vm(),
   Context = ev8:new_context(Vm),
-  ev8:install(Context, [ev8_erlang, ev8_require]),
+  ev8:install(Context, [ev8_require]),
   File = filename:absname(filename:join(code:priv_dir(erless), "erless.js")),
   ev8:eval_file(Context, File),
   Compile = ev8:get(Context, global, <<"compile">>),
